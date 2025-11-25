@@ -10,20 +10,20 @@ class Specflow < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://devtools.stackshala.com/specflow/downloads/v0.1.0-alpha/specflow-darwin-arm64"
-      sha256 "87d7ef4dc29db82e646ae9aad5621354bb87a6da6f53ba7cc005492d1cac8805"
+      sha256 "87b6bd5212c7f349d3321281602ca935d3851956ecc78e33e1666aa6be1513c2"
     else
       url "https://devtools.stackshala.com/specflow/downloads/v0.1.0-alpha/specflow-darwin-amd64"
-      sha256 "b87147471ebb0b5ad5e61a9885dea8541fef6417a20d7a2837446fbf66bb444b"
+      sha256 "dbd3b5b55008dc33f89fb06f5cf1bd48aa9917bb70e2b258e4d5e1b45d30dca0"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://devtools.stackshala.com/specflow/downloads/v0.1.0-alpha/specflow-linux-arm64"
-      sha256 "b81b98a9966fcec3f73d17cb079649b747bb266d12da1912b50d2e499e365a33"
+      sha256 "dad3f175d110cf7327f21d0f173595df467f5835b3a624a0cca46ec82aaad900"
     else
       url "https://devtools.stackshala.com/specflow/downloads/v0.1.0-alpha/specflow-linux-amd64"
-      sha256 "adb6432af1473f4b493ea21d2a95d8ab5caf7b7ba2d169a9c353b638ffb4ade5"
+      sha256 "d66dd12e2e50e778058badca06d7035875b8f9cde4320a045f28d98e8c4a9668"
     end
   end
 
