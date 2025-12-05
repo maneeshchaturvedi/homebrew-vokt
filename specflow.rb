@@ -10,20 +10,20 @@ class Specflow < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/maneeshchaturvedi/homebrew-specflow/releases/download/v1.1.0-alpha/specflow-darwin-arm64"
-      sha256 "686c9e2ac9065bc7e05a3d49dfc8cd3c721dba90c23f55870a2a8158c048e2e5"
+      sha256 "696ff6bb5d4e5d7e64784c112675d0d804fbce310d14c657ba1b1bbc25b82751"
     else
       url "https://github.com/maneeshchaturvedi/homebrew-specflow/releases/download/v1.1.0-alpha/specflow-darwin-amd64"
-      sha256 "0457caa8de568cf4e9bc2a833487fe9020ed122c3c4766e96343f17b39f4979e"
+      sha256 "56fb2328b092c29000092fd16b5f60b010675a6fb6ad0b9c243c8680426fbd9b"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/maneeshchaturvedi/homebrew-specflow/releases/download/v1.1.0-alpha/specflow-linux-arm64"
-      sha256 "3a24c8e69b5f3e3eda9228c3495abb3405cae06f5548623cabf9f6358c2cf1ba"
+      sha256 "0e6d482c0419e77c1abb3cdcecaa2c7d011dcbb3b113095553db0301b549dec9"
     else
       url "https://github.com/maneeshchaturvedi/homebrew-specflow/releases/download/v1.1.0-alpha/specflow-linux-amd64"
-      sha256 "50ba8b1aa2de559173b854c53b35846535b95962fe65ef7f0e974ebe69081c0b"
+      sha256 "90434aa7d108201c476235ee90e334542bbe12e2724c4865b3ae1e364646728b"
     end
   end
 
