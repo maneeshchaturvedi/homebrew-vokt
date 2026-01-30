@@ -4,26 +4,26 @@
 class Vokt < Formula
   desc "AI-powered specification-driven development for legacy code"
   homepage "https://github.com/maneeshchaturvedi/homebrew-vokt"
-  version "2.0.13"
+  version "2.0.14"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/maneeshchaturvedi/homebrew-vokt/releases/download/v2.0.13/vokt-darwin-arm64"
-      sha256 "8266e5feba094d8b03eaa1b21b78e7305cfab6d89baf6101057543ab1e68496d"
+      url "https://github.com/maneeshchaturvedi/homebrew-vokt/releases/download/v2.0.14/vokt-darwin-arm64"
+      sha256 "c9576a54388590a7e327ea0d10617edd08e304df2e3cc670a4baf6dcf2218af7"
     else
-      url "https://github.com/maneeshchaturvedi/homebrew-vokt/releases/download/v2.0.13/vokt-darwin-amd64"
-      sha256 "de91e1ce6ae4cf687f3f96682dd5f4281834d47b18ab704da6daeab103ba0f9a"
+      url "https://github.com/maneeshchaturvedi/homebrew-vokt/releases/download/v2.0.14/vokt-darwin-amd64"
+      sha256 "6f796ab6cbd6a9c42dbfc4b20dfe43b5ec0b712682005e9da0d0a03f42dd68f6"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/maneeshchaturvedi/homebrew-vokt/releases/download/v2.0.13/vokt-linux-arm64"
-      sha256 "0ef259597658cdf09c1b4bc22f6f5a3e34f7e240f29391f5aa1f48dfebb29e3b"
+      url "https://github.com/maneeshchaturvedi/homebrew-vokt/releases/download/v2.0.14/vokt-linux-arm64"
+      sha256 "203800ba00506776f7e04d7fdeaef359ce5178e6933f75eba6122e049871b054"
     else
-      url "https://github.com/maneeshchaturvedi/homebrew-vokt/releases/download/v2.0.13/vokt-linux-amd64"
-      sha256 "c1918de6a933095ed29aec95c0bec7c1c9f0bfdd060df72c1ad4913b5c7c88db"
+      url "https://github.com/maneeshchaturvedi/homebrew-vokt/releases/download/v2.0.14/vokt-linux-amd64"
+      sha256 "8f77f6d712d28089c38e282d4e9acefd16c2c93700adf3750c04d5b4b6e71e30"
     end
   end
 
