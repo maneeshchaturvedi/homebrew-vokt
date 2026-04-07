@@ -1,6 +1,6 @@
 # Package Repository for Vokt
 
-Official package repository for [Vokt](https://github.com/maneeshchaturvedi/vokt) - supporting Homebrew (macOS/Linux) and Chocolatey (Windows).
+Official package repository for Vokt — behavioral code analysis for Go and Java codebases. Supports Homebrew (macOS/Linux) and Chocolatey (Windows).
 
 ## Installation
 
@@ -20,34 +20,24 @@ Download the latest `.nupkg` file from [releases](https://github.com/maneeshchat
 choco install vokt-cli -s . -y
 ```
 
-Or using PowerShell to download and install:
-
-```powershell
-# Replace with the desired version
-$version = "1.1.0-alpha"
-$url = "https://github.com/maneeshchaturvedi/homebrew-vokt/releases/download/v$version/vokt-cli.$version.nupkg"
-Invoke-WebRequest -Uri $url -OutFile "vokt-cli.$version.nupkg"
-choco install vokt-cli -s . -y
-```
-
 ## About Vokt
 
-Add tests and documentation to legacy code automatically - as you work.
-
-Vokt lets you safely use AI assistants on legacy codebases by automatically generating specifications and tests. No big-bang refactoring required.
+Vokt builds precise call graphs for Go and Java codebases using SSA/VTA and pointer analysis. It computes risk scores, blast radius, hub detection, and behavioral facts for every function — giving developers and AI coding assistants the context they need to make safe changes.
 
 ### Features
 
-- 🔄 **Cold-Start** - Auto-generate specs from existing legacy code
-- 🧪 **Test Generation** - Comprehensive tests with property-based testing
-- 📊 **80/20 Rule** - Cover the 20% of code that changes 80% of the time
-- 📚 **Living Documentation** - Version history shows WHY decisions were made
-- 🛡️ **Drift Detection** - Prevents AI from breaking existing requirements
+- **Call Graph Analysis** — Precise call graphs using VTA (Go) and pointer analysis (Java)
+- **Risk Scoring** — Composite risk scores from blast radius, hub centrality, churn, bus factor, and complexity
+- **Blast Radius** — Confidence-weighted impact analysis for any function
+- **Hub Detection** — Identify the most central functions in the codebase
+- **Behavioral Facts** — Guards, mutations, error flows, and purity for every function
+- **MCP Server** — Integrates with AI coding assistants (Claude Code) via Model Context Protocol
+- **Change Validation** — Detect removed guards, swallowed errors, and purity regressions
 
 ## Links
 
-- [Documentation](https://github.com/maneeshchaturvedi/vokt)
-- [Issues](https://github.com/maneeshchaturvedi/vokt/issues)
+- [Releases](https://github.com/maneeshchaturvedi/homebrew-vokt/releases)
+- [Issues](https://github.com/maneeshchaturvedi/homebrew-vokt/issues)
 
 ## License
 

@@ -6,15 +6,15 @@
     <title>Vokt CLI</title>
     <authors>Maneesh Chaturvedi</authors>
     <owners>maneeshchaturvedi</owners>
-    <projectUrl>https://github.com/maneeshchaturvedi/vokt</projectUrl>
-    <licenseUrl>https://github.com/maneeshchaturvedi/vokt/blob/main/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/maneeshchaturvedi/homebrew-vokt</projectUrl>
+    <licenseUrl>https://github.com/maneeshchaturvedi/homebrew-vokt/blob/main/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>AI-powered specification-driven development for legacy code. Vokt helps you understand and modernize legacy code through AI-powered specifications.</description>
-    <summary>Add tests and documentation to legacy code automatically - as you work</summary>
-    <tags>vokt cli development ai specifications legacy-code testing</tags>
+    <description>Behavioral code analysis for Go and Java codebases. Vokt builds precise call graphs using SSA/VTA analysis, computes risk scores, blast radius, and hub detection to help developers understand the impact of code changes.</description>
+    <summary>Behavioral code analysis — call graphs, risk scores, blast radius</summary>
+    <tags>vokt cli development code-analysis call-graph risk-score blast-radius</tags>
     <packageSourceUrl>https://github.com/maneeshchaturvedi/homebrew-vokt</packageSourceUrl>
-    <docsUrl>https://github.com/maneeshchaturvedi/vokt</docsUrl>
-    <bugTrackerUrl>https://github.com/maneeshchaturvedi/vokt/issues</bugTrackerUrl>
+    <docsUrl>https://github.com/maneeshchaturvedi/homebrew-vokt</docsUrl>
+    <bugTrackerUrl>https://github.com/maneeshchaturvedi/homebrew-vokt/issues</bugTrackerUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

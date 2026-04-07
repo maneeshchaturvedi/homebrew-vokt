@@ -2,7 +2,7 @@
 # To install: brew install maneeshchaturvedi/vokt/vokt
 
 class Vokt < Formula
-  desc "AI-powered specification-driven development for legacy code"
+  desc "Behavioral code analysis — call graphs, risk scores, blast radius"
   homepage "https://github.com/maneeshchaturvedi/homebrew-vokt"
   version "2.0.34"
   license "MIT"
@@ -27,14 +27,27 @@ class Vokt < Formula
     end
   end
 
+  # Java engine JARs (platform-independent) for Java/JVM analysis
+  resource "java-engine" do
+    url "https://github.com/maneeshchaturvedi/homebrew-vokt/releases/download/v2.0.6/vokt-java-engine.jar"
+  end
+
+  resource "tai-e" do
+    url "https://github.com/maneeshchaturvedi/homebrew-vokt/releases/download/v2.0.6/tai-e-all.jar"
+  end
+
   def install
     bin.install "vokt-darwin-arm64" => "vokt" if Hardware::CPU.arm? && OS.mac?
     bin.install "vokt-darwin-amd64" => "vokt" if Hardware::CPU.intel? && OS.mac?
     bin.install "vokt-linux-arm64" => "vokt" if Hardware::CPU.arm? && OS.linux?
     bin.install "vokt-linux-amd64" => "vokt" if Hardware::CPU.intel? && OS.linux?
+
+    # Place Java engine JARs next to the binary so vokt finds them automatically
+    resource("java-engine").stage { bin.install "vokt-java-engine.jar" }
+    resource("tai-e").stage { bin.install "tai-e-all.jar" }
   end
 
   test do
-    assert_match "Vokt", shell_output("#{bin}/vokt --version")
+    assert_match "vokt", shell_output("#{bin}/vokt --version")
   end
 end
