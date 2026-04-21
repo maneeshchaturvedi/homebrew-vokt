@@ -4,21 +4,21 @@
 class Vokt < Formula
   desc "Behavioral code analysis — call graphs, risk scores, blast radius"
   homepage "https://github.com/voktlabs/homebrew-vokt"
-  version "2.0.59"
+  version "2.0.60"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/voktlabs/homebrew-vokt/releases/download/v2.0.59/vokt-darwin-arm64"
-      sha256 "3a56bf987a8c50318a2899daa6125f434cd38565b6b0cbda73d9e6b1c649c87e"
+      url "https://github.com/voktlabs/homebrew-vokt/releases/download/v2.0.60/vokt-darwin-arm64"
+      sha256 "0103fc3cf9e21a34bb58e2eca505c9d64961442147b3df5d9f535c6b53d9b7ee"
 
       resource "go-toolchain" do
         url "https://go.dev/dl/go1.26.2.darwin-arm64.tar.gz"
         sha256 "32af1522bf3e3ff3975864780a429cc0b41d190ec7bf90faa661d6d64566e7af"
       end
     else
-      url "https://github.com/voktlabs/homebrew-vokt/releases/download/v2.0.59/vokt-darwin-amd64"
-      sha256 "1edff41dc7ad7733a8b876feb58ffcd55aff538caba508480e4724567d3fe912"
+      url "https://github.com/voktlabs/homebrew-vokt/releases/download/v2.0.60/vokt-darwin-amd64"
+      sha256 "dde79b82bf6dee26763b289ed05bfdcfe7b213e56cb20402c9bcb05ca958d71a"
 
       resource "go-toolchain" do
         url "https://go.dev/dl/go1.26.2.darwin-amd64.tar.gz"
@@ -29,16 +29,16 @@ class Vokt < Formula
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/voktlabs/homebrew-vokt/releases/download/v2.0.59/vokt-linux-arm64"
-      sha256 "101d5e5ea2f536d80db71a06f10e425ee743c754e7d068dd9488b66a9ce78d2b"
+      url "https://github.com/voktlabs/homebrew-vokt/releases/download/v2.0.60/vokt-linux-arm64"
+      sha256 "c32ce799ac3061958c926608cee0cd99cc3f9b8b5393cacee984fe03184be682"
 
       resource "go-toolchain" do
         url "https://go.dev/dl/go1.26.2.linux-arm64.tar.gz"
         sha256 "c958a1fe1b361391db163a485e21f5f228142d6f8b584f6bef89b26f66dc5b23"
       end
     else
-      url "https://github.com/voktlabs/homebrew-vokt/releases/download/v2.0.59/vokt-linux-amd64"
-      sha256 "66b93d3cdcd7a67c4336c132f4f58e518a4959dff2cf7af22858ed4a21b3e896"
+      url "https://github.com/voktlabs/homebrew-vokt/releases/download/v2.0.60/vokt-linux-amd64"
+      sha256 "18f14af60454f5ea6ebd0ad5f5128f9df8625022754eb2a550e6a5ee921604e2"
 
       resource "go-toolchain" do
         url "https://go.dev/dl/go1.26.2.linux-amd64.tar.gz"
@@ -49,12 +49,12 @@ class Vokt < Formula
 
   # Java engine (platform-independent) for Java/JVM analysis
   resource "java-engine" do
-    url "https://github.com/voktlabs/homebrew-vokt/releases/download/v2.0.59/vokt-java-engine.jar"
+    url "https://github.com/voktlabs/homebrew-vokt/releases/download/v2.0.60/vokt-java-engine.jar"
   end
 
   # Tai-e runtime (LGPL, kept separate) — tarball of JARs
   resource "tai-e-deps" do
-    url "https://github.com/voktlabs/homebrew-vokt/releases/download/v2.0.59/tai-e-deps.tar.gz"
+    url "https://github.com/voktlabs/homebrew-vokt/releases/download/v2.0.60/tai-e-deps.tar.gz"
   end
 
   def install
